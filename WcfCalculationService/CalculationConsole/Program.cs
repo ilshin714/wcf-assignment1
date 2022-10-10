@@ -1,17 +1,30 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Runtime.InteropServices;
-using System.Text;
-using System.Threading.Tasks;
+﻿/*
+ * Program : PROG-3170 Distributed Applications Development
+ * Professor : Tapas Mandal
+ * Title : Assignment1 
+ * Author : Ilshin Ji 
+ * Student Number : 8679480
+ * History
+ *          Created   : October 9 2022
+ *          Modified  : October 10 2022
+ */
+
+using System;
 
 namespace CalculationConsole
 {
+    /// <summary>
+    /// Program class to run the console app
+    /// </summary>
     internal class Program
     {
         // Import and declare the wcf service
         static CalculationServiceReference.CalculationClient client = new CalculationServiceReference.CalculationClient();
 
+        /// <summary>
+        /// Main method to run the program
+        /// </summary>
+        /// <param name="args"></param>
         static void Main(string[] args)
         {
             Console.WriteLine("Ilshin Ji PROG-3170 Assignment1");
@@ -50,6 +63,10 @@ namespace CalculationConsole
             Console.ReadLine();
         }
 
+        /// <summary>
+        /// Give users to select options
+        /// </summary>
+        /// <returns></returns>
         static string SelectOption()
         {
             Console.WriteLine("Please type one of choice numbers below:");
@@ -63,6 +80,9 @@ namespace CalculationConsole
             return Console.ReadLine();
         }
 
+        /// <summary>
+        /// Check the prime number and print the result
+        /// </summary>
         static void ComputePrimeNumber()
         {
             bool result = false;
@@ -82,6 +102,9 @@ namespace CalculationConsole
             }
         }
 
+        /// <summary>
+        /// Sum every digit of user typed number and print out ot the console
+        /// </summary>
         static void ComputeSumofDigits()
         {
             bool result = false;
@@ -101,6 +124,9 @@ namespace CalculationConsole
             }
         }
 
+        /// <summary>
+        /// Print reversed order of the your typed string
+        /// </summary>
         static void ComputeWordReverse()
         {
             bool result = false;
@@ -117,6 +143,9 @@ namespace CalculationConsole
             }
         }
 
+        /// <summary>
+        /// Generate a html tag string from user typed inputs
+        /// </summary>
         static void ComputeTagGenereation()
         {
             bool result = false;
@@ -147,6 +176,9 @@ namespace CalculationConsole
             }
         }
 
+        /// <summary>
+        /// Compute 5 number sort 
+        /// </summary>
         static void Compute5NumberSort()
         {
             bool result = false;

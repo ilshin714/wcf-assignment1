@@ -1,9 +1,15 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Runtime.Serialization;
+﻿/*
+ * Program : PROG-3170 Distributed Applications Development
+ * Professor : Tapas Mandal
+ * Title : Assignment1 
+ * Author : Ilshin Ji 
+ * Student Number : 8679480
+ * History
+ *          Created   : October 9 2022
+ *          Modified  : October 10 2022
+ */
+
 using System.ServiceModel;
-using System.Text;
 
 namespace WcfCalculationService
 {
