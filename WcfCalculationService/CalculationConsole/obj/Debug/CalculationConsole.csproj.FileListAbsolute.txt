@@ -1,8 +1,8 @@
-C:\Users\ilshin\source\repos\WCF\wcf-assignment1\WcfCalculationService\CalculationConsole\obj\Debug\CalculationConsole.csproj.AssemblyReference.cache
-C:\Users\ilshin\source\repos\WCF\wcf-assignment1\WcfCalculationService\CalculationConsole\obj\Debug\CalculationConsole.csproj.SuggestedBindingRedirects.cache
-C:\Users\ilshin\source\repos\WCF\wcf-assignment1\WcfCalculationService\CalculationConsole\obj\Debug\CalculationConsole.csproj.CoreCompileInputs.cache
 C:\Users\ilshin\source\repos\WCF\wcf-assignment1\WcfCalculationService\CalculationConsole\bin\Debug\CalculationConsole.exe.config
 C:\Users\ilshin\source\repos\WCF\wcf-assignment1\WcfCalculationService\CalculationConsole\bin\Debug\CalculationConsole.exe
 C:\Users\ilshin\source\repos\WCF\wcf-assignment1\WcfCalculationService\CalculationConsole\bin\Debug\CalculationConsole.pdb
+C:\Users\ilshin\source\repos\WCF\wcf-assignment1\WcfCalculationService\CalculationConsole\obj\Debug\CalculationConsole.csproj.AssemblyReference.cache
+C:\Users\ilshin\source\repos\WCF\wcf-assignment1\WcfCalculationService\CalculationConsole\obj\Debug\CalculationConsole.csproj.SuggestedBindingRedirects.cache
+C:\Users\ilshin\source\repos\WCF\wcf-assignment1\WcfCalculationService\CalculationConsole\obj\Debug\CalculationConsole.csproj.CoreCompileInputs.cache
 C:\Users\ilshin\source\repos\WCF\wcf-assignment1\WcfCalculationService\CalculationConsole\obj\Debug\CalculationConsole.exe
 C:\Users\ilshin\source\repos\WCF\wcf-assignment1\WcfCalculationService\CalculationConsole\obj\Debug\CalculationConsole.pdb

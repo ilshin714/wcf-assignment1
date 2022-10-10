@@ -11,7 +11,7 @@ namespace WcfCalculationService
     // NOTE: In order to launch WCF Test Client for testing this service, please select Calculation.svc or Calculation.svc.cs at the Solution Explorer and start debugging.
     public class Calculation : ICalculation
     {
-
+        // 1) Check if the int parater is prime numer. 
         public string IsPrimeNumber(int number)
         {
             int primeNumbercheck = 0;
@@ -31,24 +31,55 @@ namespace WcfCalculationService
             return "Not a Prime Number";
         }
 
-        public void PrintHTMLString(string tag, string text)
+        // 2) Print sum of all the digits of the int parameter
+        public int SumDigits(string numberString)
         {
-            throw new NotImplementedException();
+            int sumOfDigits = 0;
+            for(int i = 0; i <numberString.Length; i++)
+            {
+                sumOfDigits += int.Parse(numberString[i].ToString());
+            }
+
+            return sumOfDigits;
         }
 
+        // 3) Reverse the string paramter and return the result
         public string ReverseString(string word)
         {
-            return word;
+            string reversedWord = "";
+            for (int i = word.Length -1; i >= 0; i--)
+            {
+                reversedWord += word[i].ToString();
+            }
+
+            return reversedWord;
         }
 
-        public int[] SortFiveNumbers(int[] numbers)
+        // 4) Print HTML tags to the string paramter and print the tag string
+        public string PrintHTMLString(string tag, string text)
         {
-            throw new NotImplementedException();
+            return $"<{tag}> {text} </{tag}>";
         }
 
-        public int SumDigits(int number)
+
+
+        // 5) get sort type and an array of 5 numbers,
+        // sort 5 numbers accordin to the sort type and return the array
+        public int[] SortFiveNumbers(string sortType, int[] numbers)
         {
-            throw new NotImplementedException();
+            if (sortType.Equals("1"))
+            {
+                Array.Sort(numbers);
+            }
+            else
+            {
+                Array.Sort(numbers);
+                Array.Reverse(numbers);
+            }
+
+            return numbers;
         }
+
+
     }
 }

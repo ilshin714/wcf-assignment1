@@ -22,10 +22,10 @@ namespace CalculationConsole.CalculationServiceReference {
         System.Threading.Tasks.Task<string> IsPrimeNumberAsync(int number);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/ICalculation/SumDigits", ReplyAction="http://tempuri.org/ICalculation/SumDigitsResponse")]
-        int SumDigits(int number);
+        int SumDigits(string number);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/ICalculation/SumDigits", ReplyAction="http://tempuri.org/ICalculation/SumDigitsResponse")]
-        System.Threading.Tasks.Task<int> SumDigitsAsync(int number);
+        System.Threading.Tasks.Task<int> SumDigitsAsync(string number);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/ICalculation/ReverseString", ReplyAction="http://tempuri.org/ICalculation/ReverseStringResponse")]
         string ReverseString(string word);
@@ -34,16 +34,16 @@ namespace CalculationConsole.CalculationServiceReference {
         System.Threading.Tasks.Task<string> ReverseStringAsync(string word);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/ICalculation/PrintHTMLString", ReplyAction="http://tempuri.org/ICalculation/PrintHTMLStringResponse")]
-        void PrintHTMLString(string tag, string text);
+        string PrintHTMLString(string tag, string text);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/ICalculation/PrintHTMLString", ReplyAction="http://tempuri.org/ICalculation/PrintHTMLStringResponse")]
-        System.Threading.Tasks.Task PrintHTMLStringAsync(string tag, string text);
+        System.Threading.Tasks.Task<string> PrintHTMLStringAsync(string tag, string text);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/ICalculation/SortFiveNumbers", ReplyAction="http://tempuri.org/ICalculation/SortFiveNumbersResponse")]
-        int[] SortFiveNumbers(int[] numbers);
+        int[] SortFiveNumbers(string orderType, int[] numbers);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/ICalculation/SortFiveNumbers", ReplyAction="http://tempuri.org/ICalculation/SortFiveNumbersResponse")]
-        System.Threading.Tasks.Task<int[]> SortFiveNumbersAsync(int[] numbers);
+        System.Threading.Tasks.Task<int[]> SortFiveNumbersAsync(string orderType, int[] numbers);
     }
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
@@ -81,11 +81,11 @@ namespace CalculationConsole.CalculationServiceReference {
             return base.Channel.IsPrimeNumberAsync(number);
         }
         
-        public int SumDigits(int number) {
+        public int SumDigits(string number) {
             return base.Channel.SumDigits(number);
         }
         
-        public System.Threading.Tasks.Task<int> SumDigitsAsync(int number) {
+        public System.Threading.Tasks.Task<int> SumDigitsAsync(string number) {
             return base.Channel.SumDigitsAsync(number);
         }
         
@@ -97,20 +97,20 @@ namespace CalculationConsole.CalculationServiceReference {
             return base.Channel.ReverseStringAsync(word);
         }
         
-        public void PrintHTMLString(string tag, string text) {
-            base.Channel.PrintHTMLString(tag, text);
+        public string PrintHTMLString(string tag, string text) {
+            return base.Channel.PrintHTMLString(tag, text);
         }
         
-        public System.Threading.Tasks.Task PrintHTMLStringAsync(string tag, string text) {
+        public System.Threading.Tasks.Task<string> PrintHTMLStringAsync(string tag, string text) {
             return base.Channel.PrintHTMLStringAsync(tag, text);
         }
         
-        public int[] SortFiveNumbers(int[] numbers) {
-            return base.Channel.SortFiveNumbers(numbers);
+        public int[] SortFiveNumbers(string orderType, int[] numbers) {
+            return base.Channel.SortFiveNumbers(orderType, numbers);
         }
         
-        public System.Threading.Tasks.Task<int[]> SortFiveNumbersAsync(int[] numbers) {
-            return base.Channel.SortFiveNumbersAsync(numbers);
+        public System.Threading.Tasks.Task<int[]> SortFiveNumbersAsync(string orderType, int[] numbers) {
+            return base.Channel.SortFiveNumbersAsync(orderType, numbers);
         }
     }
 }

@@ -17,7 +17,7 @@ namespace WcfCalculationService
 
         // 2) Print sum of all the digits of the int parameter
         [OperationContract]
-        int SumDigits(int number);
+        int SumDigits(string number);
 
         // 3) Reverse the string paramter and return the result
         [OperationContract]
@@ -25,11 +25,11 @@ namespace WcfCalculationService
 
         // 4) Print HTML tags to the string paramter and print the tag string
         [OperationContract]
-        void PrintHTMLString(string tag, string text);
+        string PrintHTMLString(string tag, string text);
 
         // 5) get sort type and an array of 5 numbers,
         // sort 5 numbers accordin to the sort type and return the array
         [OperationContract]
-        int[] SortFiveNumbers(int[] numbers);
+        int[] SortFiveNumbers(string orderType, int[] numbers);
     }
 }
