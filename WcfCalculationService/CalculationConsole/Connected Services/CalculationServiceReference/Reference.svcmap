@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ID="57219877-73f0-4d7e-8c28-2c63c18d6280" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://localhost:60160/Calculation.svc" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="Calculation.disco" MetadataType="Disco" ID="0f7e839a-ff66-43ad-8cb7-a4a3ee00d1cf" SourceId="1" SourceUrl="http://localhost:60160/Calculation.svc?disco" />
+    <MetadataFile FileName="Calculation.xsd" MetadataType="Schema" ID="c4c2844c-326f-4c9e-be15-13c1f301ce1a" SourceId="1" SourceUrl="http://localhost:60160/Calculation.svc?xsd=xsd1" />
+    <MetadataFile FileName="Calculation.wsdl" MetadataType="Wsdl" ID="2d6f7dae-83a3-4238-90ae-3921c42c95c5" SourceId="1" SourceUrl="http://localhost:60160/Calculation.svc?wsdl" />
+    <MetadataFile FileName="Calculation1.xsd" MetadataType="Schema" ID="45f7106f-36a6-459b-bd15-99a36c1b14d9" SourceId="1" SourceUrl="http://localhost:60160/Calculation.svc?xsd=xsd2" />
+    <MetadataFile FileName="Calculation2.xsd" MetadataType="Schema" ID="07dbceca-c934-4a6d-8ecf-51a1b807bcde" SourceId="1" SourceUrl="http://localhost:60160/Calculation.svc?xsd=xsd0" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

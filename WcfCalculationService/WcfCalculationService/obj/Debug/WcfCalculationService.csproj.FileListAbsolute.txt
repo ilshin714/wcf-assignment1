@@ -1,0 +1,7 @@
+C:\Users\ilshin\source\repos\WCF\wcf-assignment1\WcfCalculationService\WcfCalculationService\bin\WcfCalculationService.dll.config
+C:\Users\ilshin\source\repos\WCF\wcf-assignment1\WcfCalculationService\WcfCalculationService\bin\WcfCalculationService.dll
+C:\Users\ilshin\source\repos\WCF\wcf-assignment1\WcfCalculationService\WcfCalculationService\bin\WcfCalculationService.pdb
+C:\Users\ilshin\source\repos\WCF\wcf-assignment1\WcfCalculationService\WcfCalculationService\obj\Debug\WcfCalculationService.csproj.AssemblyReference.cache
+C:\Users\ilshin\source\repos\WCF\wcf-assignment1\WcfCalculationService\WcfCalculationService\obj\Debug\WcfCalculationService.csproj.CoreCompileInputs.cache
+C:\Users\ilshin\source\repos\WCF\wcf-assignment1\WcfCalculationService\WcfCalculationService\obj\Debug\WcfCalculationService.dll
+C:\Users\ilshin\source\repos\WCF\wcf-assignment1\WcfCalculationService\WcfCalculationService\obj\Debug\WcfCalculationService.pdb
