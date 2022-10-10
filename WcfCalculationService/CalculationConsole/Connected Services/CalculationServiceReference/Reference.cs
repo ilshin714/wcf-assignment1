@@ -16,10 +16,10 @@ namespace CalculationConsole.CalculationServiceReference {
     public interface ICalculation {
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/ICalculation/IsPrimeNumber", ReplyAction="http://tempuri.org/ICalculation/IsPrimeNumberResponse")]
-        bool IsPrimeNumber(int number);
+        string IsPrimeNumber(int number);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/ICalculation/IsPrimeNumber", ReplyAction="http://tempuri.org/ICalculation/IsPrimeNumberResponse")]
-        System.Threading.Tasks.Task<bool> IsPrimeNumberAsync(int number);
+        System.Threading.Tasks.Task<string> IsPrimeNumberAsync(int number);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/ICalculation/SumDigits", ReplyAction="http://tempuri.org/ICalculation/SumDigitsResponse")]
         int SumDigits(int number);
@@ -73,11 +73,11 @@ namespace CalculationConsole.CalculationServiceReference {
                 base(binding, remoteAddress) {
         }
         
-        public bool IsPrimeNumber(int number) {
+        public string IsPrimeNumber(int number) {
             return base.Channel.IsPrimeNumber(number);
         }
         
-        public System.Threading.Tasks.Task<bool> IsPrimeNumberAsync(int number) {
+        public System.Threading.Tasks.Task<string> IsPrimeNumberAsync(int number) {
             return base.Channel.IsPrimeNumberAsync(number);
         }
         

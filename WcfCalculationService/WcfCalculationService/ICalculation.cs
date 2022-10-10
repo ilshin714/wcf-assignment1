@@ -13,7 +13,7 @@ namespace WcfCalculationService
     {
         // 1) Check if the int parater is prime numer. 
         [OperationContract]
-        bool IsPrimeNumber(int number);
+        string IsPrimeNumber(int number);
 
         // 2) Print sum of all the digits of the int parameter
         [OperationContract]

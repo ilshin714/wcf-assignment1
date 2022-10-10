@@ -12,9 +12,23 @@ namespace WcfCalculationService
     public class Calculation : ICalculation
     {
 
-        public bool IsPrimeNumber(int number)
+        public string IsPrimeNumber(int number)
         {
-            throw new NotImplementedException();
+            int primeNumbercheck = 0;
+            for (int i = 1; i <= number; i++)
+            {
+                if(number % i == 0)
+                {
+                    primeNumbercheck++;
+                }
+            }
+
+            if (primeNumbercheck == 2)
+            {
+                return "Prime Number";
+            }
+
+            return "Not a Prime Number";
         }
 
         public void PrintHTMLString(string tag, string text)
@@ -24,7 +38,7 @@ namespace WcfCalculationService
 
         public string ReverseString(string word)
         {
-            throw new NotImplementedException();
+            return word;
         }
 
         public int[] SortFiveNumbers(int[] numbers)
